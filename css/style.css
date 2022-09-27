@@ -1,0 +1,200 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+background-color: #1f343c;
+color: white;
+line-height: 20px;
+box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #f0bd1d;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+.conteiner {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo__link{
+    color: #1f343c;
+    font-family: 'Rampart One', cursive;
+    font-size: 30px;
+}
+
+.header{
+    background-color: #f0bd1d;
+    width: 100%;
+}
+
+.subtitle {
+    font-size: 40px;
+}
+
+.main{
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    left: 0;
+}
+
+.nav{
+    margin-left: auto;
+}
+
+.nav__list {
+    display:flex;
+}
+
+.nav__link{
+    color: #1f343c;
+}
+
+.nav__item {
+    margin-left: 40px;
+    border: #1f343c 2px solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery__item:nth-child(even){
+    margin-left: 15px;
+}
+
+.gallery__item{
+    margin-bottom: 10px;
+    max-width: 570px;
+}
+
+.grid__body{
+    display: grid;
+    grid-template-columns:33% 33%; 
+}
+
+.grid__item{
+    text-align: center;
+    border: 2px dashed #f0bd1d;
+    padding: 30px;
+}
+
+.grid__item:nth-child(4n-2), .grid__item:nth-child(4n-3){
+    background-color: #d9d9d9;
+    color: black;
+}
+
+.grid__item:nth-child(4n), .grid__item:nth-child(4n-1){
+    background-color: #c0c0c0;
+    color: grey;
+}
+
+.section-gallery{
+    margin-top: 30px;
+}
+
+.section-contacts {
+    margin-bottom: 20px;
+}
+
+.nav__link {
+}
+.section-main {
+}
+.section-main__img {
+}
+.examples__content {
+}
+
+.section-advantage {
+}
+.shrek {
+}
+.git-link {
+}
+.phone {
+}
+.phone__number {
+}
+.email {
+}
+.email__address {
+}
+
+.footer {
+    background-color: #f0bd1d;
+}
+
+.footer__content {
+}
+
+.footer__text {
+    padding: 40px;
+    margin: 0;
+    font-family: 'Rampart One', cursive;
+    font-size: 50px;
+    color: #1f343c;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px){
+    .conteiner{
+        max-width: 1170px;
+    }
+}
+
+@media screen and (max-width: 1199px){
+    .conteiner{
+        max-width: 960px;
+    }
+    .gallery__item:nth-child(even){
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .conteiner{
+        max-width: 720px;
+    }
+    
+    .footer__text{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .conteiner{
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .conteiner{
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+
