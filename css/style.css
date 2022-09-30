@@ -38,6 +38,8 @@ img{
 }
 
 .header{
+    position: fixed;
+    top: 0;
     background-color: #f0bd1d;
     width: 100%;
 }
@@ -47,6 +49,7 @@ img{
 }
 
 .main{
+    margin-top: 80px;
 }
 
 .header-content{
@@ -144,6 +147,8 @@ img{
 }
 
 .footer {
+    position: absolute;
+    width: 100%;
     background-color: #f0bd1d;
 }
 
