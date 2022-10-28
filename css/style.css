@@ -1,205 +1,63 @@
-body{
-font-family: Arial, Helvetica, sans-serif;
-font-size: 16px;
-background-color: #1f343c;
-color: white;
-line-height: 20px;
-box-sizing: border-box;
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin:  0;
+    font-size: 16px;
+    color: #fff;
 }
 
 a{
     text-decoration: none;
-    color: #f0bd1d;
+    color: #fff;
 }
 
-ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.noise{
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #171429;
+    background-image: url(https://cliply.co/wp-content/uploads/2021/07/402107790_STATIC_NOISE_400.gif);
+    opacity: 0.04;
 }
 
-img{
-    width: 100%;
-}
-
-.conteiner {
+.container{
     max-width: 1170px;
     margin: 0 auto;
 }
 
-.logo {
-    margin-left: 20px;
-}
-
-.logo__link{
-    color: #1f343c;
-    font-family: 'Rampart One', cursive;
-    font-size: 30px;
-}
-
 .header{
-    position: fixed;
-    top: 0;
-    background-color: #f0bd1d;
-    width: 100%;
+    background-color: rgb(20, 20, 20);
+    background-image: url(/img/giga.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
 }
 
-.subtitle {
-    font-size: 40px;
-}
-
-.main{
-    margin-top: 80px;
-}
-
-.header-content{
+.header__nav{
     display: flex;
     align-items: center;
-    padding: 10px 0;
-    width: 100%;
-    left: 0;
 }
 
-.nav{
+.header__links{
     margin-left: auto;
-}
-
-.nav__list {
-    display:flex;
-}
-
-.nav__link{
-    color: #1f343c;
-}
-
-.nav__item {
-    margin-left: 40px;
-    border: #1f343c 2px solid;
-    padding: 10px;
-    border-radius: 15px;
-}
-
-.gallery{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.gallery__item:nth-child(even){
-    margin-left: 15px;
+    align-items: center;
 }
 
-.gallery__item{
-    margin-bottom: 10px;
-    max-width: 570px;
+.logo{
+
 }
 
-.grid__body{
-    display: grid;
-    grid-template-columns:33% 33%; 
+.logo__text{
+    white-space: nowrap;
 }
 
-.grid__item{
-    text-align: center;
-    border: 2px dashed #f0bd1d;
-    padding: 30px;
+.header__container{
+padding-top: 20px;
 }
 
-.grid__item:nth-child(4n-2), .grid__item:nth-child(4n-3){
-    background-color: #d9d9d9;
-    color: black;
+.header__item_hover{
+    margin-left: 20px;
 }
-
-.grid__item:nth-child(4n), .grid__item:nth-child(4n-1){
-    background-color: #c0c0c0;
-    color: grey;
-}
-
-.section-gallery{
-    margin-top: 30px;
-}
-
-.section-contacts {
-    margin-bottom: 20px;
-}
-
-.nav__link {
-}
-.section-main {
-}
-.section-main__img {
-}
-.examples__content {
-}
-
-.section-advantage {
-}
-.shrek {
-}
-.git-link {
-}
-.phone {
-}
-.phone__number {
-}
-.email {
-}
-.email__address {
-}
-
-.footer {
-    position: absolute;
-    width: 100%;
-    background-color: #f0bd1d;
-}
-
-.footer__content {
-}
-
-.footer__text {
-    padding: 40px;
-    margin: 0;
-    font-family: 'Rampart One', cursive;
-    font-size: 50px;
-    color: #1f343c;
-    text-align: center;
-}
-
-@media screen and (max-width: 1200px){
-    .conteiner{
-        max-width: 1170px;
-    }
-}
-
-@media screen and (max-width: 1199px){
-    .conteiner{
-        max-width: 960px;
-    }
-    .gallery__item:nth-child(even){
-        margin-left: 0;
-    }
-}
-
-@media screen and (max-width: 991px){
-    .conteiner{
-        max-width: 720px;
-    }
-    
-    .footer__text{
-        visibility: hidden;
-    }
-}
-
-@media screen and (max-width: 767px){
-    .conteiner{
-        max-width: 540px;
-    }
-}
-
-@media screen and (max-width: 575px){
-    .conteiner{
-        max-width: 100%;
-        padding: 0 15px;
-    }
-}
-
-
