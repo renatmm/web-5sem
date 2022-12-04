@@ -49,7 +49,7 @@ ul {
 
 .header__bg{
     height: 100vh;
-    background-image: url(./img/giga.png);
+    background-image: url(../img/giga.png);
     background-repeat: no-repeat;
     background-position: center;
 }
