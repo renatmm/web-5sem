@@ -5,6 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/table.css">
+	<script src="script.js"></script>
+	<script src="pageLoading.js"></script>
+	<script src="./configuration.js" ></script>
+
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
 	<title>Renat M.</title>
 </head>
 <body>
@@ -26,23 +33,68 @@
 		</div>
 	</header>
 
+
+
 	<main id="main" class="main">
-		
+		<section class="table">
+			<div class="container table__container">
+				
+				<div class="wrap">
+					<input type="text" name="" id="input">
+					<button id="btn">add</button>
+					<ul id="result"></ul>
+					<div>
+					</div>
+				</div>			
+
+			</div>
+		</section>
 	</main>
 
-	<footer>
+	<footer class="footer">
 		<div class="container footer__container">
-			<div class="footer__contacts">
-				tg
-				inst
-				gh
+			<div class="contacts">
+				<ul class="contacts__list">
+					<li class="contacts__item">
+						<a class="contacts__link" href="">
+							<img class="contacts__icone" src="./img/tg.webp" alt="">
+						</a>
+					</li>
+					<li class="contacts__item">
+						<a class="contacts__link" href="">
+							<img class="contacts__icone" src="./img/inst.png.webp" alt="">
+						</a>
+					</li>
+					<li class="contacts__item">
+						<a class="contacts__link" href="">
+							<img class="contacts__icone" src="./img/gh.png" alt="">
+						</a>
+					</li>
+					<li class="contacts__item">
+						<a class="contacts__link" href="">
+							<img class="contacts__icone" src="./img/vk.png" alt="">
+						</a>
+					</li>
+
+					<li class="contacts__item">
+						<a href="tel:+79006555440" class="">
+							<strong class="">+7 495 322-54-48</strong>
+						</a>
+					</li>
+
+					<li class="contacts__item">
+						<a class="" href = "mailto:abc@example.com?subject = Feedback&body = Message">
+							abc@example.com
+						</a>
+					</li>
+				</ul>
+			
 			</div>
+			<div class="loadInformation" id="loadInformation">Время загрузки страницы:</div>
 		</div>
-
-
 	</footer>
 
-	
 	<div class="noise"></div>
+	<script src="toDo.js"></script>
 </body>
 </html>

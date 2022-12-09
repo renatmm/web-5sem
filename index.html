@@ -5,10 +5,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/style.css">
+	<script src="script.js"></script>
+	<script src="pageLoading.js"></script>
+	<script src="dynamicTable.js"></script>
+	<script src="./configuration.js" ></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
 	<title>Renat M.</title>
 </head>
 <body>
-
 	<header id="header" class="header">
 		<div class="container header__container">
 			<nav class="header__nav">
@@ -57,23 +62,26 @@
 			</div>
 		</section>
 
-		<section class="table">
-			<div class="container table__conteiner">
-				<h2 class="subtitle table__subtitle">Grid table</h2>
-				<div class="table__grid">
-					<div class="table__body">
-						<div class="table__item"><h3 class="table__title">1</h3></div>
-						<div class="table__item"><h3 class="table__title">2</h3></div>
-						<div class="table__item"><h3 class="table__title">3</h3></div>
-						<div class="table__item"><h3 class="table__title">4</h3></div>
-						<div class="table__item"><h3 class="table__title">5</h3></div>
-						<div class="table__item"><h3 class="table__title">6</h3></div>
-						<div class="table__item"><h3 class="table__title">7</h3></div>
-						<div class="table__item"><h3 class="table__title">8</h3></div>
+		<section class="grid-table">
+			<div class="container grid-table__conteiner">
+				<h2 class="subtitle grid-table__subtitle">Grid grid-table</h2>
+				<div class="grid-table__grid">
+					<div class="grid-table__body">
+						<div class="grid-table__item"><h3 class="grid-table__title">1</h3></div>
+						<div class="grid-table__item"><h3 class="grid-table__title">2</h3></div>
+						<div class="grid-table__item"><h3 class="grid-table__title">3</h3></div>
+						<div class="grid-table__item"><h3 class="grid-table__title">4</h3></div>
+						<div class="grid-table__item"><h3 class="grid-table__title">5</h3></div>
+						<div class="grid-table__item"><h3 class="grid-table__title">6</h3></div>
+						<div class="grid-table__item"><h3 class="grid-table__title">7</h3></div>
+						<div class="grid-table__item"><h3 class="grid-table__title">8</h3></div>
 					</div>
 				</div>
 			</div>
 		</section>
+
+
+		
 	</main>
 
 	<footer class="footer">
@@ -102,7 +110,7 @@
 					</li>
 
 					<li class="contacts__item">
-						<a href="tel:+74953225448" class="">
+						<a href="tel:+79006555440" class="">
 							<strong class="">+7 495 322-54-48</strong>
 						</a>
 					</li>
@@ -113,7 +121,9 @@
 						</a>
 					</li>
 				</ul>
+			
 			</div>
+			<div class="loadInformation" id="loadInformation">Время загрузки страницы:</div>
 		</div>
 
 

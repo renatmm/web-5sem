@@ -7,6 +7,7 @@ body {
     background-color: rgb(20, 20, 20);
 }
 
+
 a{
     text-decoration: none;
     color: pink;
@@ -22,12 +23,12 @@ ul {
 
 .noise{
     position: fixed;
-    z-index: 0;
+    z-index: -1;
     left: 0%;
     top: 0%;
     width: 100vw;
     height: 100vh;
-    background-color: #171429;
+    /* background-color: #171429; */
     background-image: url(https://cliply.co/wp-content/uploads/2021/07/402107790_STATIC_NOISE_400.gif);
     opacity: 0.04;
 }
@@ -44,7 +45,7 @@ ul {
 }
 
 .header{
-    background-color: rgb(20, 20, 20);
+    /* background-color: rgb(20, 20, 20); */
 }
 
 .header__bg{
@@ -61,7 +62,6 @@ ul {
 }
 
 .header__links{
-    z-index: 999;
     margin-left: auto;
     display: flex;
     align-items: center;
@@ -136,24 +136,24 @@ main{
     width: 100%;
 }
 
-.table__body{
+.grid-table__body{
     display: grid;
     grid-template-columns:33% 33%; 
     justify-content: center;
 }
 
-.table__item{
+.grid-table__item{
     text-align: center;
     border: 2px dashed #fff;
     padding: 30px;
 }
 
-.table__item:nth-child(4n-2), .table__item:nth-child(4n-3){
+.grid-table__item:nth-child(4n-2), .grid-table__item:nth-child(4n-3){
     background-color: plum;
     color: black;
 }
 
-.table__item:nth-child(4n), .table__item:nth-child(4n-1){
+.grid-table__item:nth-child(4n), .grid-table__item:nth-child(4n-1){
     background-color: pink;
     color: grey;
 }
@@ -174,19 +174,20 @@ main{
 .about__img{
     float: right;
     max-width: 500px;
-    border: 1rem solid #5086fc;
+    border: 1rem solid pink;
     margin-left: 40px;
 }
 
 .about__text{
-    color: #5086fc;
+    color: pink;
     font-size: 30px;
     line-height: 60px;
 }
 
 
 
-footer{
+.footer__container{
+    padding: 30px;
     border-top: #fff 1px solid;
     margin-top: 70px;
 }
@@ -205,5 +206,7 @@ footer{
 }
 
 .contacts li{
-    z-index: 999;
+
 }
+
+.table{}
