@@ -13,7 +13,7 @@ btn.addEventListener('click', (e) => {
 function createDeleteElements(value) {
     const li = document.createElement('li');
     const btn = document.createElement('button');
-
+    let todos;
     li.className ='li';
     li.textContent = value;
 
@@ -21,16 +21,30 @@ function createDeleteElements(value) {
     btn.className ='btn-rem';
     btn.textContent = 'delete';
     li.appendChild(btn);
+    toLocal();
 
     // remove todo
     btn.addEventListener('click', (e) => {
         result.removeChild(li);
+        toLocal();
     })
 
     // toggle class active
     li.addEventListener('click', (e) => {
         li.classList.toggle('li-active')
+        toLocal();
     })
 
-    result.appendChild(li);
+    result.appendChild(li);    
 }
+
+function toLocal(){
+    todos = result.innerHTML;
+    localStorage.setItem("todos", todos);
+}
+
+if (localStorage.getItem("todos")) {
+    result.innerHTML = localStorage.getItem('todos');
+}
+
+
